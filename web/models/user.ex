@@ -6,7 +6,7 @@ defmodule Discuss.User do
     field :provider, :string
     field :token, :string
 
-    timestamps
+    timestamps()
   end
 
   # params defaults to an empty map with the \\ syntax
