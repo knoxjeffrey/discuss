@@ -4,6 +4,7 @@ defmodule Discuss.Topic do
   schema "topics" do
     field :title, :string
     belongs_to :user, Discuss.User
+    has_many :comments, Discuss.Comment
   end
 
   # params defaults to an empty map with the \\ syntax
