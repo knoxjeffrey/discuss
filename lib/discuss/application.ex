@@ -1,4 +1,4 @@
-defmodule Discuss do
+defmodule Discuss.Application do
   use Application
 
   # See http://elixir-lang.org/docs/stable/elixir/Application.html
@@ -12,8 +12,8 @@ defmodule Discuss do
       supervisor(Discuss.Repo, []),
       # Start the endpoint when the application starts
       supervisor(Discuss.Web.Endpoint, []),
-      # Start your own worker by calling: Discuss.Worker.start_link(arg1, arg2, arg3)
-      # worker(Discuss.Worker, [arg1, arg2, arg3]),
+      # Start your own worker by calling: Heetweet.Worker.start_link(arg1, arg2, arg3)
+      # worker(Heetweet.Worker, [arg1, arg2, arg3]),
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
